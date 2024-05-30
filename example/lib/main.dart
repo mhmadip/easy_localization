@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
@@ -95,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: Icon(
               Icons.language,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ],
